@@ -349,5 +349,8 @@ MigrationBackup/
 # Ionide (cross platform F# VS Code tools) working folder
 .ionide/
 
-#ignore key folder
-keys/
+#ignore secret key files
+*.crt
+*.csr
+*.key
+*.srl

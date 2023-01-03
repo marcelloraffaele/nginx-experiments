@@ -9,7 +9,7 @@ The mutual authentication protect communications against the following attaks:
 - Impersonation attack
 for more info [Mutual_authentication wokipedia](https://en.wikipedia.org/wiki/Mutual_authentication).
 
-mTLS is often used in business-to-business (B2B) applications where the number of programmatic and homogeneous clients is limited. It can be used in microservices-based applications in order to authenticate the interaction betweeen microservices. Infact it's onw of the features that the service mesh implements in order to protect the traffic between services.
+mTLS is often used in business-to-business (B2B) applications where the number of programmatic and homogeneous clients is limited. It can be used in microservices-based applications in order to authenticate the interaction betweeen microservices. mTLS is also one of the features that the service mesh implements in order to protect the traffic between microservices.
 
 In this post I will show how to configure a Nginx proxy to protect a Microservice.
 

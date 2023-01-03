@@ -1,0 +1,20 @@
+version: '3'
+services:
+  server.local:
+    image: nginx:alpine
+    ports:
+      - "443:443"
+    volumes:
+      - "./server/nginx.conf:/etc/nginx/nginx.conf"
+      - "./keys/server.crt:/etc/nginx/server.crt"
+      - "./keys/server.key:/etc/nginx/server.key"
+      - "./keys/rootCA.crt:/etc/nginx/ca.crt"
+  client.local:
+    image: nginx:alpine
+    ports:
+      - "8080:80"
+    volumes:
+      - "./client/nginx.conf:/etc/nginx/nginx.conf"
+      - "./keys/client.crt:/etc/nginx/client.crt"
+      - "./keys/client.key:/etc/nginx/client.key"
+      - "./keys/rootCA.crt:/etc/nginx/ca.crt"
